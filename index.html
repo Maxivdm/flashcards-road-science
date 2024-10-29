@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Road Science Flashcards</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Road Science: Motion and Forces</h1>
+    <p>Explore concepts of speed, velocity, acceleration, stopping distance, and Newton’s laws!</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><button onclick="showCategory('motion')">Motion</button></li>
+      <li><button onclick="showCategory('forces')">Forces</button></li>
+      <li><button onclick="showCategory('graphs')">Graphs & Calculations</button></li>
+      <li><button onclick="showCategory('friction')">Friction</button></li>
+      <li><button onclick="showCategory('newton')">Newton's Laws</button></li>
+      <li><button onclick="showCategory('safety')">Safety in Motion</button></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div id="flashcard-container">
+      <div id="flashcard">
+        <p id="flashcard-question"></p>
+        <button onclick="flipFlashcard()">Show Answer</button>
+        <p id="flashcard-answer" style="display:none;"></p>
+      </div>
+      <button onclick="nextFlashcard()">Next Flashcard</button>
+    </div>
+  </main>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
